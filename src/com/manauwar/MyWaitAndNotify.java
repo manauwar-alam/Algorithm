@@ -3,8 +3,7 @@ package com.manauwar;
 public class MyWaitAndNotify {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 	
 	Test monitorObject = new Test();

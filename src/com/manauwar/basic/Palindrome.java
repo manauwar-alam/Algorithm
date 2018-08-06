@@ -4,7 +4,7 @@ public class Palindrome {
 	
 	public static void main(String [] args)
 	{
-		int number = 112211;
+		int number = 1122211;
 		System.out.println("Palindrom or not for number : "+number+"-"+isPalindrome(number));
 	}
 	
@@ -17,7 +17,7 @@ public class Palindrome {
         while (palindrome != 0) {
             int remainder = palindrome % 10;
             reverse = reverse * 10 + remainder;
-            System.out.println(reverse);
+            System.out.println("reverse is : "+reverse);
             palindrome = palindrome / 10;
         }
 
