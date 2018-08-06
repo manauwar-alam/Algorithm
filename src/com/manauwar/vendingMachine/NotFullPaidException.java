@@ -1,7 +1,11 @@
 package com.manauwar.vendingMachine;
 
 public class NotFullPaidException extends RuntimeException {
-    private String message;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String message;
     private long remaining;
    
     public NotFullPaidException(String message, long remaining) {

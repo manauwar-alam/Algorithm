@@ -1,7 +1,11 @@
 package com.manauwar.vendingMachine;
 
 public class SoldOutException extends RuntimeException {
-    private String message;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String message;
    
     public SoldOutException(String string) {
         this.message = string;
