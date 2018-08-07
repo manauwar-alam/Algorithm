@@ -31,14 +31,8 @@ public class SortDemo{
 	    //Bubbel sor Test
 	    System.out.println("\nBubble sort Implementation");
 	    BubbleSort.bubbleSort(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
-	    
-
-
-
-
-
-
-		
+	    BubbleSort.bubbleSortImproved(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
+	
 		
 	} 
 	
