@@ -53,6 +53,8 @@ public class BubbleSort {
             // after each pass largest element moved to end of array
             last--;
         }
+        
+        System.out.printf("Sorted Array using Bubble sort Improved :%s %n", Arrays.toString(number));
 
     }
 
