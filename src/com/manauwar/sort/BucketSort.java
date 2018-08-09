@@ -12,9 +12,9 @@ public class BucketSort {
 		    final int[] code = hash(input);
 		    
 		    // create and initialize buckets to ArrayList: O(n)
-		    List[] buckets = new List[code[1]];
+		    List<Integer>[] buckets = new List[code[1]];
 		    for (int i = 0; i < code[1]; i++) {
-		      buckets[i] = new ArrayList();
+		      buckets[i] = new ArrayList<Integer>();
 		    }
 		    
 		    // distribute data into buckets: O(n)
@@ -23,7 +23,7 @@ public class BucketSort {
 		    }
 		    
 		    // sort each bucket O(n)
-		    for (List bucket : buckets) {
+		    for (List<Integer> bucket : buckets) {
 		      Collections.sort(bucket);
 		    }
 		    

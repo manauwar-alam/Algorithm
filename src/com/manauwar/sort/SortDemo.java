@@ -10,13 +10,24 @@ public class SortDemo{
 	
 	public static void main(String args[]) { // unsorted integer array 
 		
-		
+		//Quick sort Recursive Test
 		int[] unsorted = {50, 44, 6, 5, 3, 1, 8, 7, 2, 4,2,32, -5, -23};
 		System.out.println("Quick sort Implementation");
 		System.out.println("Unsorted array :" + Arrays.toString(unsorted)); 
 		QuickSort algorithm = new QuickSort(); // sorting integer array using quicksort algorithm 
 		algorithm.sort(unsorted); // printing sorted array 
 		System.out.println("Sorted array :" + Arrays.toString(unsorted)); 
+		
+		
+		//Quick sort iterative
+		
+		System.out.println("\nQuick sort Iterative Implementation");
+	        System.out.println("Unsorted array : " + Arrays.toString(unsorted));
+
+	        QuickSortIterative.iterativeQsort(unsorted);
+	        System.out.println("Sorted array : " + Arrays.toString(unsorted));
+
+		
 		
 	
 		//Insertion Sort Test
