@@ -43,8 +43,22 @@ public class SortDemo{
 	    System.out.println("\nBubble sort Implementation");
 	    BubbleSort.bubbleSort(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
 	    BubbleSort.bubbleSortImproved(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
-	
-		
+	    
+	    
+	    //counting sort
+	    
+	    System.out.println("\nCounting sort in Java");
+	    int[] input = { 60, 40, 30, 20, 10, 40, 30, 60, 60, 20, 40, 30, 40 };
+	    int k = 60;
+
+	    System.out.println("integer array before sorting");
+	    System.out.println(Arrays.toString(input));
+
+	    // sorting array using Counting Sort Algorithm
+	   CountingSort.sort(input, k);
+
+	    System.out.println("integer array after sorting using counting sort algorithm");
+	    System.out.println(Arrays.toString(input));		
 	} 
 	
 }
