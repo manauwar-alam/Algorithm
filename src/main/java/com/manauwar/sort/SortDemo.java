@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 
 
-public class SortDemo{ 
+public class SortDemo { 
 	
 	public static void main(String args[]) { // unsorted integer array 
 		
@@ -22,10 +22,9 @@ public class SortDemo{
 		//Quick sort iterative
 		
 		System.out.println("\nQuick sort Iterative Implementation");
-	        System.out.println("Unsorted array : " + Arrays.toString(unsorted));
-
-	        QuickSortIterative.iterativeQsort(unsorted);
-	        System.out.println("Sorted array : " + Arrays.toString(unsorted));
+	    System.out.println("Unsorted array : " + Arrays.toString(unsorted));
+	    QuickSortIterative.iterativeQsort(unsorted);
+	    System.out.println("Sorted array : " + Arrays.toString(unsorted));
 
 		
 		
@@ -50,13 +49,10 @@ public class SortDemo{
 	    System.out.println("\nCounting sort in Java");
 	    int[] input = { 60, 40, 30, 20, 10, 40, 30, 60, 60, 20, 40, 30, 40 };
 	    int k = 60;
-
 	    System.out.println("integer array before sorting");
 	    System.out.println(Arrays.toString(input));
-
 	    // sorting array using Counting Sort Algorithm
-	   CountingSort.sort(input, k);
-
+	    CountingSort.sort(input, k);
 	    System.out.println("integer array after sorting using counting sort algorithm");
 	    System.out.println(Arrays.toString(input));	
 	    
@@ -64,28 +60,31 @@ public class SortDemo{
 	    //Mege sort Test
 	    
 	    int arr[] = {12, 11, 13, 5, 6, 7,11 ,23, 32, 2};
-	    
         System.out.println("\n\nGiven Array For Merge Sort");
         MergeSort.printArray(arr);
- 
         MergeSort ob = new MergeSort();
         ob.sort(arr, 0, arr.length-1);
- 
         System.out.println("\nSorted array");
         MergeSort.printArray(arr);
         
-       
-        
-        int arr2[] = {12, 11, 13, 5, 6, 7,11,67,14, 80,65 };
+             
+        int arr2[] = {12, 11, 13, 5, 6, 7,11,67,14 };
         int n = arr2.length;
-     
         System.out.printf("\nGiven array for Merge Sort Iterative is \n");
         MergeSort.printArray(arr2, n);
-     
         MergeSort.sortIterative(arr2, n);
-     
         System.out.printf("\nSorted array is \n");
         MergeSort.printArray(arr2, n);
+        
+        
+        //Heap Sort Test
+        int arr3[] = {12, 11, 13, 5, 6, 7,2, 34, 999, 54};
+        System.out.println("\n\nGiven Array For Heap Sort");
+        HeapSort.printArray(arr3);
+        HeapSort ob3 = new HeapSort();
+        ob3.sort(arr3);
+        System.out.println("Sorted array is");
+        HeapSort.printArray(arr3);
 	    
 	    
 	} 
