@@ -39,7 +39,7 @@ public class SortDemo{
 	    System.out.println("integer array after sorting : " + Arrays.toString(unsorted2));
 	    
 	    
-	    //Bubbel sor Test
+	    //Bubbel sort Test
 	    System.out.println("\nBubble sort Implementation");
 	    BubbleSort.bubbleSort(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
 	    BubbleSort.bubbleSortImproved(new int[] { 20, 12, 45, -9, 19, 91, 55, -23 });
@@ -58,7 +58,36 @@ public class SortDemo{
 	   CountingSort.sort(input, k);
 
 	    System.out.println("integer array after sorting using counting sort algorithm");
-	    System.out.println(Arrays.toString(input));		
+	    System.out.println(Arrays.toString(input));	
+	    
+	    
+	    //Mege sort Test
+	    
+	    int arr[] = {12, 11, 13, 5, 6, 7,11 ,23, 32, 2};
+	    
+        System.out.println("\n\nGiven Array For Merge Sort");
+        MergeSort.printArray(arr);
+ 
+        MergeSort ob = new MergeSort();
+        ob.sort(arr, 0, arr.length-1);
+ 
+        System.out.println("\nSorted array");
+        MergeSort.printArray(arr);
+        
+       
+        
+        int arr2[] = {12, 11, 13, 5, 6, 7,11,67,14, 80,65 };
+        int n = arr2.length;
+     
+        System.out.printf("\nGiven array for Merge Sort Iterative is \n");
+        MergeSort.printArray(arr2, n);
+     
+        MergeSort.sortIterative(arr2, n);
+     
+        System.out.printf("\nSorted array is \n");
+        MergeSort.printArray(arr2, n);
+	    
+	    
 	} 
 	
 }
