@@ -10,7 +10,7 @@ public class MyTests {
 	public void searchTests()
 	{
 		
-		assertEquals
+		//assertEquals
 		
 		
 		
