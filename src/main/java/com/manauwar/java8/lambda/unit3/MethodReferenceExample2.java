@@ -1,12 +1,11 @@
 package com.manauwar.java8.lambda.unit3;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import com.manauwar.java8.lambda.common.*;
+import com.manauwar.java8.lambda.common.Person;
 
 public class MethodReferenceExample2 {
 

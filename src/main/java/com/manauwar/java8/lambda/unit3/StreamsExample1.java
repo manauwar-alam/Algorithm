@@ -2,9 +2,8 @@ package com.manauwar.java8.lambda.unit3;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
-import com.manauwar.java8.lambda.common.*;
+import com.manauwar.java8.lambda.common.Person;
 
 public class StreamsExample1 {
 
