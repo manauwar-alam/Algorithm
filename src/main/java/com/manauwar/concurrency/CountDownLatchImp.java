@@ -3,6 +3,14 @@ package com.manauwar.concurrency;
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownLatchImp {
+	
+	/* 
+	 * One of the disadvantage of CountDownLatch is that its not reusable 
+	 * once count reaches to zero you can not use CountDownLatch any more, 
+	 * but don't worry Java concurrency API has another concurrent utility 
+	 * called CyclicBarrier for such requirements.
+	 */
+
 
 	public static void main(String[] args) {
 
