@@ -1,5 +1,7 @@
 package com.manauwar;
 
+import java.util.concurrent.CompletableFuture;
+
 public class Test {
 	String s = null;
 	public Test(String s)
@@ -22,5 +24,26 @@ public class Test {
 	{
 		return s;
 	}
+	
+	
+	
+	public void myMethod2()
+	{
+		
+	String name = null;
+	 
+	// ...
+	 
+	CompletableFuture<String> completableFuture  
+	  =  CompletableFuture.supplyAsync(() -> {
+	      if (name == null) {
+	          throw new RuntimeException("Computation error!");
+	      }
+	      return "Hello, " + name;
+	  }).handle((s, t) -> s != null ? s : "Hello, Stranger!");
+	 
+	//assertEquals("Hello, Stranger!", completableFuture.get());
+	
+}
 
 }
