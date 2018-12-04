@@ -45,13 +45,13 @@ public class SemaphoreTestCase {
 		
 		IntStream.range(0, slots).forEach(user -> executorService.execute(loginQueue::tryLogin));
 		executorService.shutdown();
-		assertEquals(0,loginQueue.availableSlots());
+		assertEquals("Available slots",0,loginQueue.availableSlots());
 		loginQueue.logout();
 		
 		
 		
-		assertTrue(loginQueue.availableSlots() > 0);
-		assertTrue(loginQueue.tryLogin());
+		assertTrue("Slots are available",loginQueue.availableSlots() > 0);
+		assertTrue("Logged in",loginQueue.tryLogin());
 		
 		
 	}
