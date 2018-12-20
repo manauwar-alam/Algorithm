@@ -19,6 +19,7 @@ public class CustomExceptionDemo {
 	public String getProduct(int productId) {
 
 		if (products.get(productId) == null) {
+			
 			throw new NoSuchProductException("No Such Product Exists ", productId);
 		}
 
@@ -39,9 +40,6 @@ public class CustomExceptionDemo {
 
 class NoSuchProductException extends RuntimeException {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int productId;
 
