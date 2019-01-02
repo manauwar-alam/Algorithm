@@ -9,7 +9,6 @@ public class DecoratorPatternDemo {
 		
 		
 		Shape redCircle = new RedShapeDecorator(new Circle());
-		//redCircle.draw();
 		
 		Shape redRectangle = new RedShapeDecorator(new Rectangle());
 		
