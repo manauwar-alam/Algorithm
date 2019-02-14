@@ -58,6 +58,9 @@ public class MessageDigestImp {
 	}
 
 	
+	
+	//If a key is used as part of the message-digest generation, the algorithm is known as a message-authentication code.
+	
 	static void createMessageDigestUsingKey(String text)
 	{
 		
