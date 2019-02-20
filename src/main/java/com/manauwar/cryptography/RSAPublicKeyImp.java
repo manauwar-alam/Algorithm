@@ -33,12 +33,14 @@ public class RSAPublicKeyImp {
 		try {
 			key = getRSAKey();
 		} catch (NoSuchAlgorithmException e) {
+
 			e.printStackTrace();
 		} 
 		
 		try {
 			cipher = getCipherObject();
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+
 			e.printStackTrace();
 		}
 		
@@ -57,6 +59,7 @@ public class RSAPublicKeyImp {
 			decryptedText = decrypt(cipher, key, cipherText);
 			System.out.println("Decrypted text is : "+new String(decryptedText,"UTF8"));
 		} catch (InvalidKeyException | IllegalBlockSizeException | BadPaddingException | UnsupportedEncodingException e) {
+
 			e.printStackTrace();
 		}
 		
