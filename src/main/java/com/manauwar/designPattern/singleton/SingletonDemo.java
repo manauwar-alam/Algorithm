@@ -16,7 +16,7 @@ public class SingletonDemo {
 			System.out.println("Second call : "+singletonEnum2);
 			System.out.println("Third call  : "+singletonEnum3);
 			//System.out.println(Singleton.getInstance().getTest());
-			
+
 			
 			
 			System.out.println("\nSingleton call using Inner Class");

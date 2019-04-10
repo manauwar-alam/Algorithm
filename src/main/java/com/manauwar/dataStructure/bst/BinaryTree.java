@@ -77,9 +77,7 @@ public class BinaryTree {
 				nodes.push(current.left);
 			}
 		}
-		
-		
-		
+				
 	}
 	
 	

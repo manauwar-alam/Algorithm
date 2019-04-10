@@ -20,7 +20,6 @@ public class SortDemo {
 		
 		
 		//Quick sort iterative
-		
 		System.out.println("\nQuick sort Iterative Implementation");
 	    System.out.println("Unsorted array : " + Arrays.toString(unsorted));
 	    QuickSortIterative.iterativeQsort(unsorted);

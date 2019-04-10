@@ -14,12 +14,6 @@ public enum SingletonEnum {
 	    	test = new TestObject();
 	    }
 
-	    // Static getter
-	    public static SingletonEnum getInstance()
-	    {
-	        return INSTANCE;
-	    }
-
 	    public TestObject getTest()
 	    {
 	    	//System.out.println(test);

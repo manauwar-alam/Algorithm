@@ -3,11 +3,20 @@ package com.manauwar.dataStructure.linkedList;
 public class LinkedList {
    
 	private Node head;
-    public LinkedList() { this.head = new Node("head"); }   
-    public Node head() { return head;}
+   
+	public LinkedList() { 
+    	this.head = new Node("head"); 
+    	}   
+	
+    public Node head() { 
+    	
+    	return head;
+    	
+    }
    
     public void appendIntoTail(Node node) {
-        Node current = head;
+       
+    	Node current = head;
        
         //find last element of LinkedList i.e. tail
         while(current.next() != null){
@@ -17,6 +26,7 @@ public class LinkedList {
         current.setNext(node);
     }
    
+    
     /*
      * If singly LinkedList contains Cycle then following would be true
      * 1) slow and fast will point to same node i.e. they meet
