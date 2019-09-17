@@ -1,14 +1,15 @@
 package com.manauwar.unitTest.semaphore;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.manauwar.semaphore.LoginQueueUsingSemaphore;
 
@@ -28,8 +29,7 @@ public class SemaphoreTestCase {
 		System.out.println(loginQueue.availableSlots());
 		
 		assertEquals(0,loginQueue.availableSlots());
-		assertFalse(loginQueue.tryLogin());
-		
+		assertFalse(loginQueue.tryLogin());	
 		
 	}
 	
@@ -45,15 +45,12 @@ public class SemaphoreTestCase {
 		
 		IntStream.range(0, slots).forEach(user -> executorService.execute(loginQueue::tryLogin));
 		executorService.shutdown();
-		assertEquals("Available slots",0,loginQueue.availableSlots());
+		assertEquals(0,loginQueue.availableSlots(),"Available slots");
 		loginQueue.logout();
-		
-		
-		
-		assertTrue("Slots are available",loginQueue.availableSlots() > 0);
-		assertTrue("Logged in",loginQueue.tryLogin());
-		
-		
+	
+		assertTrue(loginQueue.availableSlots() > 0,"Slots are available");
+		assertTrue(loginQueue.tryLogin(),"Logged in");
+	
 	}
 
 }
