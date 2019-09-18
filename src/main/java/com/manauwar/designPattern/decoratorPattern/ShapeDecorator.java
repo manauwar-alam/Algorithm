@@ -5,17 +5,9 @@ public abstract class ShapeDecorator implements Shape {
 	
 	protected Shape decoratedShape;
 	
-	ShapeDecorator(Shape decorator)
-	{
-		this.decoratedShape = decorator;
-	}
+	public ShapeDecorator(Shape decoratedShape) {
+        super();
+        this.decoratedShape = decoratedShape;
+  }
 	
-
-	@Override
-	public void draw() {
-		
-		decoratedShape.draw();
-		
-	}
-
 }

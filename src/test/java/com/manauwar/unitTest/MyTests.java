@@ -53,7 +53,7 @@ public class MyTests {
         System.out.println("@AfterAll executed");
     }
     
-    @Test
+    @Test	
     void testManauwar()
     {
     	System.out.println("======== TEST MANAUWAR =========");

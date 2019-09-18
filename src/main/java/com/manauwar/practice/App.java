@@ -24,7 +24,7 @@ public class App
         List<String> l2 = Arrays.asList("c","d");
         System.out.println("real array l1 : "+l1);
         System.out.println("real array l2 : "+l2);
-        
+        System.out.println();
         
         List<String> l = new ArrayList<>();
         l.addAll(l1);
@@ -36,8 +36,8 @@ public class App
         			.map(String::toUpperCase)
         			.collect(Collectors.toList());
         
-        
-        System.out.println("with map : "+letters);
+        System.out.println("Convert to UPPERCASE with map : "+letters);
+        System.out.println();
         
         
         List<String> betterLetters = Stream.of(l1, l2)
@@ -45,7 +45,7 @@ public class App
 				.map(String::toUpperCase)
 				.collect(Collectors.toList());
         
-        System.out.println("with flatmap : "+betterLetters);
+        System.out.println("Combine l1 and l2 and convert to UPPERCASE with flatmap : "+betterLetters);
         
         
         
