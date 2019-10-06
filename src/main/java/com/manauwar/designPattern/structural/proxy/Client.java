@@ -1,0 +1,11 @@
+package com.manauwar.designPattern.structural.proxy;
+
+public class Client {
+	
+	public static void main(String[] args)
+    {
+        RealObject proxy = new RealObjectProxy();
+        proxy.doSomething();
+    }
+
+}
