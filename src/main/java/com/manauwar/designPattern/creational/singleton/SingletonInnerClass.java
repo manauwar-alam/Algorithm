@@ -1,4 +1,4 @@
-package com.manauwar.designPattern.singleton;
+package com.manauwar.designPattern.creational.singleton;
 
 import java.io.Serializable;
 

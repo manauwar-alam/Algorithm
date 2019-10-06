@@ -1,4 +1,4 @@
-package com.manauwar.designPattern.decoratorPattern;
+package com.manauwar.designPattern.structural.decorator;
 
 public abstract class ShapeDecorator implements Shape {
 	
